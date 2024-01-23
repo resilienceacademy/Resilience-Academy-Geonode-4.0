@@ -1,0 +1,141 @@
+
+#wrap {
+    /* increase the size of the padding because the footer contains logos and it uses more space*/
+    padding-bottom: 80px;
+}
+
+.gn-footer .ra-footer-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.ra-footer-wrapper {
+    margin: auto;
+    text-align: center;
+}
+
+.ra-footer-wrapper small {
+    font-size: .5rem;
+}
+
+.gn-footer ul {
+    justify-content: center;
+}
+
+.gn-home-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gn-home-card {
+    width: 33.3333%;
+    max-width: 100%;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.gn-container-home {
+    padding: 0 16px;
+}
+
+.gn-container-home .gn-content {
+    max-width: 1170px;
+}
+
+#showcase {
+    color: var(--gn-info-cont);
+    background-color: var(--gn-main-variant-bg);
+}
+
+#showcase .gn-home-cards {
+    padding: 32px 0;
+    --gn-link-color: var(--gn-main-variant-color);
+}
+
+#showcase .gn-home-card a {
+    flex-direction: column;
+    display: inline-flex;
+}
+
+#showcase .fa {
+    margin-bottom: 0.5rem;
+}
+
+#showcase a {
+    font-size: 1rem;
+}
+
+#institutions {
+    padding-bottom: 6em;
+    padding-top: 3em;
+}
+
+#institutions .gn-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#institutions .gn-home-cards {
+    min-width: 500px;
+}
+
+#institutions .gn-divider {
+    width: 1px;
+    min-width: 1px;
+    height: auto;
+    background-color: var(--gn-main-border-color);
+}
+
+#institutions .gn-home-card {
+    width: auto;
+}
+
+#institutions h4 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#ra-message {
+    padding-bottom: 3em;
+    padding-top: 3em;
+    border-bottom: 1px solid var(--gn-main-border-color);
+}
+
+#ra-message h3 {
+    font-size: 1.3125rem;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .gn-home-cards {
+        flex-direction: column;
+    }
+
+    .gn-home-card {
+        width: 100%;
+        padding: 0;
+        max-width: 360px;
+    }
+
+    .gn-home-card+.gn-home-card {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid var(--gn-main-border-color);
+    }
+    #institutions .gn-content {
+        display: block;
+    }
+    #institutions .gn-home-card+.gn-home-card {
+        border-top: none;
+    }
+    #institutions .gn-divider {
+        height: 1px;
+        width: 100%;
+        width: 100%;
+        margin: 32px 0;
+    }
+    #institutions .gn-home-cards {
+        min-width: auto;
+    }
+}
