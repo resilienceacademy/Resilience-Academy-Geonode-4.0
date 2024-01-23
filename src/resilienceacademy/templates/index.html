@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+{% load i18n %}
+{% load base_tags %}
+{% block content %}
+    <section id="showcase" class="gn-container gn-container-home">
+        <div class="gn-content">
+            {% include "resilienceacademy/home-facets.html" %}
+        </div>
+    </section>
+    <section id="ra-message" class="gn-container gn-container-home">
+        <div class="gn-content">
+            <h3>{% trans "Resilience Academy’s Climate Risk Database (CRD) is a digital geospatial data repository that supports research, education, and disaster-risk management practices." %}</h3>
+        </div>
+    </section>
+    <section id="institutions" class="gn-container gn-container-home">
+        <div class="gn-content">
+            <div>
+                <h4>{% trans "Initiative by" %}</h4>
+                {% include "resilienceacademy/initiative.html" %}
+            </div>
+            <div class="gn-divider"></div>
+            <div>
+                <h4>{% trans "Supported by" %}</h4>
+                {% include "resilienceacademy/supported.html" %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block container %}{% endblock %}
+{% block ms_scripts %}{% endblock %}
