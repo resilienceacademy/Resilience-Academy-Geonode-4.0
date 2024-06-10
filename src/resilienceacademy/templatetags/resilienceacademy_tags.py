@@ -54,7 +54,7 @@ def get_custom_base_right_topbar_menu(context):
     if user.is_authenticated and not Configuration.load().read_only:
         about['items'].extend([
             {
-                "type": "divider"
+                "type": "divide r"
             },
             {
                 "type": "link",
